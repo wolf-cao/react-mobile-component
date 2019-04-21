@@ -1,0 +1,133 @@
+@import '../../style/style.less';
+
+@buttonPreCls: pf-button;
+
+.@{buttonPreCls} {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: @brand-main-white;
+  height: 90px;
+  border-radius: @button-border-radius-xs;
+
+  &.@{buttonPreCls}-large {
+    font-size: @font-size-32;
+
+    &.is-inline {
+      padding: 0 15px;
+      display: inline-block;
+      height: @button-height-lg;
+      line-height: @button-height-lg;
+    }
+  }
+
+  &.@{buttonPreCls}-md {
+    font-size: @font-size-28;
+
+    &.is-inline {
+      padding: 0 15px;
+      display: inline-block;
+      height: 54px;
+      line-height: 54px;
+    }
+  }
+
+  &.@{buttonPreCls}-mini {
+    font-size: @font-size-24;
+
+    &.is-inline {
+      padding: 0 15px;
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+
+  &.is-ghost {
+    border-width: 2px;
+    border-style: solid;
+  }
+
+  &.@{buttonPreCls}-white {
+    color: @brand-main-title;
+    background-color: #fff;
+    border-color: #d0d1d2;
+  }
+
+  &.@{buttonPreCls}-normal {
+    color: @brand-tip-text1;
+    background-color: @brand-main-background;
+    border-color: #d0d1d2;
+  }
+
+  &.@{buttonPreCls}-primary {
+    background-color: @brand-primary;
+
+    &.is-ghost {
+      background-color: @brand-main-white;
+      color: @brand-primary;
+      border-color: @brand-primary;
+    }
+  }
+
+  &.@{buttonPreCls}-primary-text {
+    background-color: @brand-light-orange;
+    color: @brand-primary;
+  }
+
+  &.@{buttonPreCls}-blue {
+    background-color: @brand-blue;
+
+    &.is-ghost {
+      background-color: @brand-main-white;
+      color: @brand-blue;
+      border-color: @brand-blue;
+    }
+  }
+
+  &.@{buttonPreCls}-primary {
+    .iconfont {
+      color: @brand-main-white;
+    }
+  }
+
+  &.is-disabled {
+    color: @brand-tip-text1;
+    opacity: 0.6;
+    background-color: @brand-main-line;
+    cursor: not-allowed;
+  }
+
+  &.is-block {
+    border-radius: 0;
+  }
+
+  &.is-round {
+    border-radius: 45px;
+  }
+
+  &.is-text-button {
+    display: inline;
+    border: none;
+    background-color: transparent;
+  }
+
+  &.is-text-button {
+    &.@{buttonPreCls}-primary {
+      color: @brand-primary;
+    }
+
+    &.@{buttonPreCls}-blue {
+      color: @brand-blue;
+    }
+
+    &.@{buttonPreCls}-md {
+      font-size: @font-size-30;
+    }
+
+    &.@{buttonPreCls}-mini {
+      font-size: @font-size-28;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../style/style.less';
+
+.pf-tag-wrap {
+  box-sizing: border-box;
+  padding: 6px;
+  flex-basis: 25%;
+  display: flex;
+
+  .pf-tag-box {
+    width: 100%;
+    box-sizing: border-box;
+    border: @hairline-width #ddd solid;
+    border-radius: 8px;
+    line-height: 70Px;
+
+    > p {
+      width: 100%;
+      text-align: center;
+      font-size: @font-size-28;
+    }
+  }
+
+  .pf-tag-box-active {
+    border: @hairline-width #a98b31 solid;
+    color: #a98b31;
+  }
+}

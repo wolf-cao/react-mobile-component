@@ -1,0 +1,34 @@
+@import '../../style/style.less';
+
+@selectPreClass: pf-select-item;
+
+.@{selectPreClass}-inline {
+  .@{selectPreClass}-label {
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: @block-space-mm;
+    padding-bottom: @block-space-mm;
+    line-height: 1;
+    font-size: @font-size-32;
+  }
+
+  .@{selectPreClass},
+  .@{selectPreClass} option {
+    font-size: @font-size-32;
+    border: none;
+    width: 100%;
+    background: none;
+    direction: rtl;
+  }
+
+  .@{selectPreClass} {
+    flex: 1;
+    appearance: none;
+
+    .@{selectPreClass}-placeholder {
+      color: @brand-tip-text1;
+    }
+  }
+}

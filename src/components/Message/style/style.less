@@ -1,0 +1,42 @@
+@import '../../style/style.less';
+
+@MessagePreCls: pf-message;
+
+.@{MessagePreCls} {
+  display: flex;
+  align-items: center;
+  padding: 18px @block-space-lg;
+  font-size: @font-size-26;
+  position: relative;
+
+  &.@{MessagePreCls}-warning {
+    background-color: @brand-light-orange;
+    color: @brand-primary;
+
+    .@{MessagePreCls}-icon {
+      color: @brand-primary;
+      position: relative;
+      top: 2px;
+      line-height: 1;
+      font-size: @font-size-34;
+    }
+
+    .@{MessagePreCls}-action-icon {
+      color: @brand-primary;
+    }
+  }
+
+  &.@{MessagePreCls}-action {
+    padding-right: 70px;
+  }
+
+  .@{MessagePreCls}-action-icon {
+    line-height: @block-space-xl;
+  }
+
+  .@{MessagePreCls}-action-icon {
+    font-size: @font-size-28;
+    position: absolute;
+    right: 4px;
+  }
+}

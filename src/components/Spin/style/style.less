@@ -1,0 +1,43 @@
+@import '../../style/style.less';
+
+@SpinPreCls: pf-spin;
+
+.@{SpinPreCls} {
+  overflow: hidden;
+
+  .@{SpinPreCls}-icon-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: @box-size-spec2;
+    height: @box-size-spec2;
+    background-color: rgba(51, 51, 51, 0.5);
+    border-radius: @button-border-radius-xs;
+    z-index: 999;
+    transform: translateX(-47%) translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .@{SpinPreCls}-icon {
+      width: 100px;
+      height: 100px;
+      display: block;
+      background-repeat: no-repeat;
+      background-size: 100px auto;
+      .encoded-svg-background('spin_loading');
+    }
+  }
+
+  .@{SpinPreCls}-mask {
+    background: #000;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 998;
+  }
+}

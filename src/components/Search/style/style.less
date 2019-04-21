@@ -1,0 +1,43 @@
+@import '../../style/style.less';
+
+.pf-search {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: @box-size-xxxl;
+  line-height: @box-size-xxxl;
+  background: @brand-main-line;
+  border-radius: 30px;
+  padding: 0 @block-space-mm 0 @block-space-lg;
+
+  .pf-search-input {
+    flex: 1;
+    height: @box-size-xl;
+    line-height: @box-size-xl;
+    outline: none;
+    border-width: 0;
+    font-size: @font-size-30;
+    background: @brand-main-line;
+    padding: 0;
+    padding-right: @block-space-mm;
+    position: relative;
+    z-index: 99;
+    appearance: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .pf-btn-search {
+    font-size: @font-size-30;
+    line-height: @font-size-30;
+    color: @brand-sub-title;
+    margin-right: 10px;
+  }
+
+  .pf-btn-delete {
+    margin-right: 0;
+    font-size: @font-size-30;
+    line-height: @font-size-30;
+    color: #aaa;
+  }
+}

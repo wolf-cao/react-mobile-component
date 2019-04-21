@@ -1,0 +1,32 @@
+@import '../../style/style.less';
+
+.pf-list-view {
+  background-color: @brand-main-white;
+
+  .pf-list-view-loading {
+    padding: @block-space-xl;
+    text-align: center;
+    color: @brand-tip-text1;
+    font-size: @font-size-32;
+  }
+}
+
+.loading-animate {
+  position: relative;
+  top: 2px;
+  color: @brand-primary !important;
+  transition: all 1s ease;
+  animation: circle 1.5s infinite 0s linear;
+  line-height: 36px;
+  height: 36px;
+  display: inline-block;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

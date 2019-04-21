@@ -1,0 +1,44 @@
+@import '../../style/style.less';
+
+@badgePreCls: pf-badge;
+
+.@{badgePreCls} {
+  color: @brand-main-white;
+  text-align: center;
+  display: inline-block;
+  line-height: 1;
+
+  &.@{badgePreCls}-primary {
+    background: @brand-primary;
+  }
+
+  &.@{badgePreCls}-error {
+    background: @brand-red;
+  }
+
+  &.@{badgePreCls}-success {
+    background: @brand-green;
+  }
+
+  &.@{badgePreCls}-warning {
+    background: @brand-color-third;
+  }
+
+  &.@{badgePreCls}-large {
+    border-radius: 32px;
+    font-size: @font-size-32;
+    padding: 4px 12px;
+  }
+
+  &.@{badgePreCls}-normal {
+    border-radius: 28px;
+    font-size: @font-size-28;
+    padding: 4px 12px;
+  }
+
+  &.@{badgePreCls}-mini {
+    border-radius: 24px;
+    font-size: @font-size-24;
+    padding: 4px 12px;
+  }
+}

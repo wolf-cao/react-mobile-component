@@ -1,0 +1,124 @@
+@import '../../style/style.less';
+.pf-digkeyboard-wrap {
+  // display: flex
+
+  .pf-number-keyBoard-input {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 88px;
+    background-color: #fff;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: background-color 0.2s;
+    align-items: center;
+    .pf-list-line {
+      height: 30px;
+      line-height: 30px;
+      width: 100%;
+      position: relative;
+      .pf-input-control {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: @brand-tip-text2;
+        text-align: left;
+      }
+      .pf-input-inputBox {
+        position: relative;
+        .pf-input-delete {
+          position: absolute;
+          right: 0;
+        }
+        &.focus {
+          &:after {
+            content: '';
+            position: relative;
+            right: 0;
+            top: 10%;
+            height: 80%;
+            border-right: 1.5px solid #108ee9;
+            animation: blink 1s infinite;
+          }
+
+          @keyframes blink {
+            0% {
+              opacity: 0;
+            }
+            50% {
+              opacity: 100;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+          @-webkit-keyframes blink {
+            0% {
+              opacity: 0;
+            }
+            50% {
+              opacity: 100;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pf-keyBoard-box {
+    width: 100%;
+    position: relative;
+    .pf-keyBoard-table {
+      position: absolute;
+      bottom: 0;
+      border-right: @hairline-width solid #e4dede;
+      border-bottom: @hairline-width solid #e4dede;
+      width: 100%;
+      background: #eee;
+      .pf-pointDisplay {
+        color: @brand-tip-text1;
+        opacity: 0.6;
+        background-color: @brand-main-line;
+        cursor: not-allowed;
+      }
+      .icon_backspace {
+        color: #2a2b2c;
+        font-size: 65px;
+      }
+      .pf-number-keyboard-sure {
+        background-color: @brand-primary;
+        color: #fff;
+        font-size: 40px;
+      }
+      td {
+        border-left: @hairline-width solid #e4dede;
+        border-top: @hairline-width solid #e4dede;
+        font-size: 50px;
+        color: #2a2b2c;
+        width: 25%;
+        text-align: center;
+        height: 100px;
+      }
+    }
+  }
+
+  .pf-digkeyboard-box {
+    transition: all 0.2s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10000;
+    transform: translateZ(0);
+
+    &.is-digkeyboard-hidden {
+      bottom: -500px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import '../../style/style.less';
+
+@collapseClass: pf-collapse;
+
+.@{collapseClass} {
+  border-bottom: @hairline-width solid @brand-main-line;
+
+  .@{collapseClass}-header {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: @brand-main-white;
+
+    &.@{collapseClass}-header-animate {
+      .@{collapseClass}-icon {
+        line-height: 1;
+        margin-right: 0;
+        transform: rotate(90deg);
+      }
+    }
+
+    .@{collapseClass}-title {
+      font-size: @font-size-30;
+      flex: 1;
+      line-height: 1;
+      padding-top: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .@{collapseClass}-icon {
+      line-height: 1;
+      margin-right: 0;
+      transform: rotate(0);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .@{collapseClass}-content {
+    font-size: @font-size-26;
+    transition: all 0.4s ease;
+
+    &.@{collapseClass}-content-hide {
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    &.@{collapseClass}-content-show {
+      max-height: 100%;
+      overflow: hidden;
+    }
+  }
+}

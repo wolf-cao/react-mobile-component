@@ -1,0 +1,222 @@
+export default [
+  {
+    SecurityCode: '78021793',
+    SecurityName: '前海猎鹰二号',
+    StrategyCode: '005',
+    StrategyName: '管理期货',
+    RunState: '1',
+    SetupDate: '12-22',
+    TDate: '2015-12-31',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '77012582',
+    SecurityName: '洪昌价值成长二号',
+    StrategyCode: '001',
+    StrategyName: '股票策略',
+    RunState: '1',
+    SetupDate: '10-15',
+    TDate: '2015-12-31',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '77025022',
+    SecurityName: '创金-鼎诺新三板',
+    StrategyCode: '001',
+    StrategyName: '股票策略',
+    RunState: '1',
+    SetupDate: '10-09',
+    TDate: '2016-10-31',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '73116331',
+    SecurityName: '博远科城',
+    StrategyCode: '008',
+    StrategyName: '其他策略',
+    RunState: '1',
+    SetupDate: '11-07',
+    TDate: '2018-07-13',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '73000063',
+    SecurityName: '点金23号',
+    StrategyCode: '001',
+    StrategyName: '股票策略',
+    RunState: '2',
+    SetupDate: '09-29',
+    TDate: '2007-09-21',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '73092040',
+    SecurityName: '云开现金',
+    StrategyCode: '008',
+    StrategyName: '其他策略',
+    RunState: '1',
+    SetupDate: '03-24',
+    TDate: '2017-08-01',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '73040463',
+    SecurityName: '汇金聚富(IX期)',
+    StrategyCode: '008',
+    StrategyName: '其他策略',
+    RunState: '1',
+    SetupDate: '05-30',
+    TDate: '2015-11-20',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '73013173',
+    SecurityName: '融盛稳健01号-增强15号',
+    StrategyCode: '003',
+    StrategyName: '复合策略',
+    RunState: '1',
+    SetupDate: '01-17',
+    TDate: '2015-09-30',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '77013687',
+    SecurityName: '永安定增陆号',
+    StrategyCode: '006',
+    StrategyName: '事件驱动',
+    RunState: '1',
+    SetupDate: '11-13',
+    TDate: '2015-12-31',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '73050074',
+    SecurityName: '龙平01号',
+    StrategyCode: '008',
+    StrategyName: '其他策略',
+    RunState: '1',
+    SetupDate: '06-28',
+    TDate: '2015-11-06',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '73077718',
+    SecurityName: '百瑞恒益107号(结构化2期)',
+    StrategyCode: '008',
+    StrategyName: '其他策略',
+    RunState: '1',
+    SetupDate: '12-05',
+    TDate: '2015-06-19',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '73056531',
+    SecurityName: '海王星1号',
+    StrategyCode: '005',
+    StrategyName: '管理期货',
+    RunState: '1',
+    SetupDate: '12-18',
+    TDate: '2016-12-30',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '73042704',
+    SecurityName: '汇金聚富(Ⅰ期)第38期',
+    StrategyCode: '008',
+    StrategyName: '其他策略',
+    RunState: '1',
+    SetupDate: '03-22',
+    TDate: '2014-06-20',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '78043093',
+    SecurityName: '汇祥1号',
+    StrategyCode: '003',
+    StrategyName: '复合策略',
+    RunState: '1',
+    SetupDate: '06-27',
+    TDate: '2017-12-29',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '78018261',
+    SecurityName: '画龙点睛新三板',
+    StrategyCode: '001',
+    StrategyName: '股票策略',
+    RunState: '1',
+    SetupDate: '10-22',
+    TDate: '2016-09-30',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '78024211',
+    SecurityName: '元素资本MOM母基金一号',
+    StrategyCode: '007',
+    StrategyName: '组合基金',
+    RunState: '2',
+    SetupDate: '01-03',
+    TDate: '2015-09-11',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '73050271',
+    SecurityName: '宏北01号',
+    StrategyCode: '008',
+    StrategyName: '其他策略',
+    RunState: '1',
+    SetupDate: '11-08',
+    TDate: '2015-09-30',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '73054676',
+    SecurityName: '恒鹰01号',
+    StrategyCode: '008',
+    StrategyName: '其他策略',
+    RunState: '1',
+    SetupDate: '02-21',
+    TDate: '2015-09-30',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '73062361',
+    SecurityName: '融达稳赢01号-第12期',
+    StrategyCode: '008',
+    StrategyName: '其他策略',
+    RunState: '1',
+    SetupDate: '06-27',
+    TDate: '2015-08-21',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  },
+  {
+    SecurityCode: '77851393',
+    SecurityName: '金鹰穗富6号进取级',
+    StrategyCode: '003',
+    StrategyName: '复合策略',
+    RunState: '1',
+    SetupDate: '09-26',
+    TDate: '2015-05-22',
+    PerANV: '认证可见',
+    AccuChg: '认证可见'
+  }
+]

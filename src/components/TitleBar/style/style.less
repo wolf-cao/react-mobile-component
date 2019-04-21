@@ -1,0 +1,33 @@
+@import '../../style/style.less';
+
+@preCls: pf-title-bar;
+
+.@{preCls} {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 0 @block-space-lg;
+  background-color: @brand-main-white;
+  border-bottom: @hairline-width solid @brand-main-line;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 28px;
+    background-color: @brand-primary;
+    left: 0;
+    top: 50%;
+    margin-top: -14px;
+  }
+
+  .@{preCls}-title {
+    flex: 1;
+    line-height: 1;
+    font-size: @font-size-30;
+  }
+
+  .@{preCls}-extra {
+  }
+}

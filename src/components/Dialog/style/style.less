@@ -1,0 +1,210 @@
+@import '../../style/style.less';
+
+.dialog-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-has-no-close {
+  .pf-dialog-close {
+    display: none;
+  }
+}
+
+.pf-dialog {
+  position: relative;
+  width: 80%;
+  margin: 10px;
+}
+.pf-dialog-wrap {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.pf-dialog-title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 32px;
+}
+.pf-dialog-content {
+  position: relative;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 16px 16px;
+  background-clip: padding-box;
+}
+.pf-dialog-close {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 18px;
+  top: 14px;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.4;
+  padding: 0;
+  text-decoration: none;
+}
+.pf-dialog-close-x:after,
+.pf-dialog-close-x:before {
+  content: '';
+  width: 40px;
+  height: 2px;
+  border-top: 3px solid #000;
+  opacity: 0.4;
+  display: block;
+  position: absolute;
+  top: 20px;
+}
+.pf-dialog-close-x:before {
+  transform: rotate(-45deg);
+}
+.pf-dialog-close-x:after {
+  transform: rotate(45deg);
+}
+.pf-dialog-header {
+  padding: 30px;
+  border-radius: 16px 16px 0 0;
+  background: #fff;
+  color: #333;
+  border-bottom: @hairline-width solid @brand-main-line;
+}
+.pf-dialog-body {
+  padding-top: 50px;
+  padding: 75px 50px 50px;
+  font-size: 32px;
+}
+.pf-dialog-footer {
+  border-top: @hairline-width solid @brand-main-line;
+  text-align: right;
+  border-radius: 0 0 16px 16px;
+}
+.pf-dialog-zoom-enter,
+.pf-dialog-zoom-appear {
+  opacity: 0;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+  animation-play-state: paused;
+}
+.pf-dialog-zoom-leave {
+  animation-duration: 0.1s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  animation-play-state: paused;
+}
+.pf-dialog-zoom-enter.pf-dialog-zoom-enter-active,
+.pf-dialog-zoom-appear.pf-dialog-zoom-appear-active {
+  animation-name: rcDialogZoomIn;
+  animation-play-state: running;
+}
+.pf-dialog-zoom-leave.pf-dialog-zoom-leave-active {
+  animation-name: rcDialogZoomOut;
+  animation-play-state: running;
+}
+@keyframes rcDialogZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes rcDialogZoomOut {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+}
+@media (min-width: 768px) {
+  .pf-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+}
+.pf-dialog-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #373737;
+  background-color: rgba(55, 55, 55, 0.6);
+  height: 100%;
+  opacity: 0.3;
+  z-index: 1050;
+}
+.pf-dialog-fade-enter,
+.pf-dialog-fade-appear {
+  opacity: 0;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  animation-play-state: paused;
+}
+.pf-dialog-fade-leave {
+  animation-duration: 0.1s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  animation-play-state: paused;
+}
+.pf-dialog-fade-enter.pf-dialog-fade-enter-active,
+.pf-dialog-fade-appear.pf-dialog-fade-appear-active {
+  animation-name: rcDialogFadeIn;
+  animation-play-state: running;
+}
+.pf-dialog-fade-leave.pf-dialog-fade-leave-active {
+  animation-name: rcDialogFadeOut;
+  animation-play-state: running;
+}
+@keyframes rcDialogFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rcDialogFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.pf-dialog-footer-box {
+  display: flex;
+  text-align: center;
+
+  .pf-dialog-button {
+    font-size: @font-size-34;
+    flex: 1;
+    display: block;
+    height: 98px;
+    line-height: 98px;
+    border-right: @hairline-width solid @brand-main-line;
+
+    &:last-child {
+      border-right: none;
+      color: @brand-primary;
+    }
+  }
+}

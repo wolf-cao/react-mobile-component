@@ -1,0 +1,146 @@
+@import '../../style/style.less';
+
+@CardPreCls: pf-card;
+
+.@{CardPreCls} {
+  border-bottom: @hairline-width solid @brand-main-line;
+  background-color: #fff;
+  position: relative;
+  box-sizing: border-box;
+
+  .@{CardPreCls}-area-feedback-active {
+    background-color: @brand-main-background;
+  }
+
+  // 跳转icon
+  .@{CardPreCls}-link-arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -15px;
+    font-size: 30px;
+  }
+
+  // 新闻卡片
+  &.@{CardPreCls}-card-news {
+    padding-bottom: 0;
+
+    .@{CardPreCls}-content-wrapper-news {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      padding: 20px 30px;
+
+      &.@{CardPreCls}-content-wrapper-left {
+        .@{CardPreCls}-avator-news {
+          margin-right: 45px;
+          margin-left: 0;
+        }
+      }
+
+      .@{CardPreCls}-content-news {
+        flex: 1;
+
+        .@{CardPreCls}-title-news {
+          font-size: 32px;
+          margin-bottom: 15px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          /*! autoprefixer: off */
+          -webkit-box-orient: vertical;
+          /* autoprefixer: on */
+        }
+
+        .@{CardPreCls}-footer-news {
+          font-size: 24px;
+          overflow: hidden;
+
+          .@{CardPreCls}-footer-item-news {
+            float: left;
+            color: #999;
+
+            &:last-child {
+              float: right;
+            }
+          }
+        }
+      }
+
+      .@{CardPreCls}-avator-news {
+        width: 178px;
+        height: 125px;
+        margin-left: 45px;
+        display: block;
+      }
+    }
+  }
+
+  // 评论卡片
+  .@{CardPreCls}-wrapper {
+    padding-bottom: 20px;
+
+    .@{CardPreCls}-header {
+      overflow: hidden;
+      padding: 30px 30px 20px;
+
+      .@{CardPreCls}-avator {
+        float: left;
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        margin-right: 20px;
+      }
+
+      .@{CardPreCls}-title {
+        font-size: 30px;
+        line-height: 1;
+        padding: 13px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .@{CardPreCls}-subTitle {
+        font-size: 24px;
+        color: #999;
+        line-height: 1;
+      }
+    }
+
+    .@{CardPreCls}-content {
+      font-size: 32px;
+      line-height: 50px;
+      padding: 0 30px;
+      color: #666;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      /*! autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+    }
+
+    .@{CardPreCls}-footer {
+      display: flex;
+      font-size: 28px;
+      color: #999;
+      padding-top: 20px;
+      height: 88px;
+      align-items: center;
+
+      .@{CardPreCls}-footer-item {
+        flex: 1;
+        text-align: center;
+
+        .iconfont {
+          font-size: 28px;
+          color: #999;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

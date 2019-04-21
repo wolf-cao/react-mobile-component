@@ -1,0 +1,77 @@
+@import '../../style/style.less';
+
+@SpinUufundPreCls: pf-mask-loading;
+
+.@{SpinUufundPreCls} {
+  height: 100%;
+  text-align: center;
+  color: @brand-tip-text2;
+  background-color: @brand-main-white;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  .@{SpinUufundPreCls}-wrapper {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -75px;
+    line-height: 1;
+
+    .@{SpinUufundPreCls}-icon {
+      position: relative;
+      overflow: hidden;
+      line-height: 1;
+      margin-top: -100px;
+
+      .iconfont {
+        position: relative;
+        top: 60px;
+        font-size: 352px;
+        line-height: 36px;
+      }
+
+      .@{SpinUufundPreCls}-image {
+        position: absolute;
+        left: 0;
+        top: -70px;
+        width: 40px;
+        height: 300px;
+        background-color: @brand-main-white;
+        opacity: 0.5;
+        transform: rotate(30deg);
+        animation: animate-move 0.8s linear infinite;
+      }
+    }
+
+    .@{SpinUufundPreCls}-text {
+      font-size: @font-size-28;
+      margin-top: -20px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+@keyframes animate-move {
+  0% {
+    left: 0;
+  }
+
+  25% {
+    left: 25%;
+  }
+
+  50% {
+    left: 50%;
+  }
+
+  75% {
+    left: 75%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}

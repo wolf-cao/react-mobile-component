@@ -1,0 +1,230 @@
+@import '../../style/style.less';
+
+.pf-select-tabs {
+  // background-color: #fff;
+  height: 90px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .pf-content-head {
+    color: #666666;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+  }
+  .pf-content-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    .pf-list-box {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.pf-select-tabs-active {
+  height: 100%;
+}
+
+/* btnBox.css */
+.pf-select-btn-box {
+  font-size: @font-size-32;
+  display: flex;
+  p {
+    height: 100px;
+    line-height: 100px;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    color: @brand-tip-text1;
+  }
+}
+
+/* selectBox.css */
+.pf-select-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .pf-select-wrap {
+    box-sizing: border-box;
+    padding: 10px 24px 10px;
+    width: 100%;
+    border-bottom: 1PX solid #ddd;
+    background-color: #fff;
+    > p {
+      margin: 0;
+      padding: 0;
+      font-size: @font-size-28;
+      padding-left: 6px;
+    }
+
+    .pf-select-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* selectList.less */
+.pf-select-listbox-wrap {
+  > p {
+    margin: 0;
+    padding: 0;
+    font-size: @font-size-28;
+    padding: 10px 12px;
+    color: #333333;
+
+    span {
+      float: right;
+      font-size: @font-size-28;
+    }
+
+    > span.active {
+      // color: #a98b31;
+    }
+  }
+
+  .pf-select-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* selectListBox.css */
+.pf-select-list-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  margin-top: -100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  z-index: 1;
+
+  .pf-select-wrap {
+    box-sizing: border-box;
+    padding: 10px 24px 10px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1PX solid #ddd;
+    background-color: #fff;
+    > p {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      padding-left: 6px;
+    }
+
+    .pf-select-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* tabTag.css */
+.pf-tab-tag {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: 0;
+    height: 50%;
+    width: 1PX;
+    background-color: #eeeeee;
+    z-index: 10;
+  }
+
+  span {
+    font-size: @font-size-28;
+    position: relative;
+    margin-left: -20px;
+    i{
+      transition: all .3s;
+      transform: rotate(0deg);
+      display: block;      
+      position: absolute;
+      top: 50%;
+      right: -36px;
+      margin-top: -7px;
+      width: 0; 
+      height: 0;
+      border-width: 16px 10px 0 10px;
+      border-style: solid;
+      border-color:#999999 transparent transparent transparent;
+
+    }
+  }
+}
+
+.pf-tab-tag:last-child{
+  &:after{
+    display: none;
+  }
+}
+
+.pf-tab-tag-active {
+  // color: #a98b31;
+  span {
+    i{
+      transform: rotate(180deg);      
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: -36px;
+      // border-width: 0px 10px 16px 10px;
+      // border-style: solid;
+      // border-color: transparent transparent #999999 transparent;
+    }
+  }
+}
+
+/* tag.less */
+.pf-tag-wrap {
+  box-sizing: border-box;
+  padding: 10px 12px;
+  flex-basis: 25%;
+  display: flex;
+  color: #999;  
+
+  .pf-tag-box {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1PX #999 solid;
+    border-radius: 8px;
+    line-height: 60px;
+
+    > p {
+      width: 100%;
+      text-align: center;
+      font-size: @font-size-28;
+    }
+  }
+
+  .pf-tag-box-active {
+    // border: 1PX #a98b31 solid;
+  }
+}

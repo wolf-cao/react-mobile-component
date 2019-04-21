@@ -1,0 +1,30 @@
+@import '../../style/style.less';
+
+// selectBox
+.pf-select-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .pf-select-wrap {
+    box-sizing: border-box;
+    padding: 10px 24px 10px;
+    width: 100%;
+    background: #fff;
+    border-bottom: @hairline-width solid #ddd;
+
+    > p {
+      margin: 0;
+      padding: 0;
+      font-size: @font-size-28;
+      padding-left: 6px;
+    }
+
+    .pf-select-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
